@@ -1,0 +1,53 @@
+.learn-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+
+}
+.container-fx {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container-fx .fx-content {
+    position: relative;
+    padding: 1rem;
+    width: 20rem;
+    height: 300px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    font-size:16px;
+
+}
+
+.fx-content:hover {
+    cursor: pointer;
+};
+
+.fx-content p {
+    color: black;
+    font-size: 16px;
+}
+.image { 
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+}
+.blue {
+    border-left: 3px solid #4895ff;
+    
+}
+.green {
+    border-left: 3px solid #3bb54a;
+}
+.red {
+    border-left: 3px solid #b3404a;
+}

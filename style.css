@@ -1,0 +1,86 @@
+@import "content/terminal.css";
+@import "content/learn-section.css";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: monospace;
+    background-image:url(content/rbo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container-main {
+    background-color: rgb(211, 211, 211);
+    opacity: 0.9;
+    min-height: 50vh; /* Use min-height para garantir que o conteúdo ocupe pelo menos toda a altura da tela */
+}
+
+.nav {
+    background-color: rgb(175, 53, 53);
+    color: white;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: inline-block;
+    position: relative;
+    padding: 2rem;
+    font-size:30px;
+    top:7rem;
+}
+
+.rb-logo {
+    width: 25px;
+    height: 23px;
+    margin-top: 10px;
+}
+
+    .ruby-st-1{
+        display:inline;
+        color:#40db86;
+    }.ruby-st-2{
+        display:inline;
+        color:rgb(255, 166, 0);
+        font-weight: bold;
+        } .ruby-st-3{
+            display: inline;
+            color:#E94B35;
+            font-weight: bold;
+        }.ruby-st-4{
+            color:gray;
+        }
+        
+
+        .about-section{
+            margin:10px;
+            background-color:#36b971;
+            padding:1rem;
+            color:rgb(233, 233, 233);
+            font-size: 18px;
+        }
+        .warning{
+                margin:10px;
+                background-color:#b94536;
+                padding:1rem;
+                color: rgb(233, 233, 233);
+                font-size: 18px;
+            }
+    @media only screen and (max-width: 990px) {
+        .container-main {
+            min-height: auto; /* Remova a altura mínima para permitir que o conteúdo se ajuste ao tamanho */
+            align-items: center; /* Centralize verticalmente */
+            display: flex; /* Use flex para alinhar os elementos verticalmente */
+            flex-direction: column; /* Empilhe os elementos verticalmente */
+            min-height: 100vh;
+        }
+    
+        .terminal-q-ruby {
+            max-width: 30rem; /* Faça o terminal ocupar toda a largura da tela */
+            margin: 1rem;
+            top:10rem;
+        }
+    }
